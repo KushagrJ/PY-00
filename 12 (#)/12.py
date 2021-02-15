@@ -15,6 +15,6 @@ while (a == "y"):
 print("That's it for the day!\n", sep = "", end = "")
 
 # The for loop assigns a new value to x every time, but nothing of this sort happens in the while loop.
-# The for loop iterates through iterable collections, whereas the while loop simply loops until the specified condition is false.
+# The for loop iterates through iterable collections, whereas the while loop simply loops until the specified condition is false - To know whether to use the for loop or the while loop.
 # The for loop is used when the number of iterations is definite.
 # The for loop is used when an operation is to be done on each member of a sequence, in order.
