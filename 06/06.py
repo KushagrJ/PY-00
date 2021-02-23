@@ -20,4 +20,10 @@ elif (dayOfWeek == 7):
 else:
     print("Enter an integer value between 1 and 7!\n", sep = "", end = "")
 
-# elif stands for else if.
+
+
+# /* Trivia
+#
+#  * elif stands for else if.
+#
+#  */

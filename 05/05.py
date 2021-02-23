@@ -6,4 +6,5 @@ percentSign = "%"
 
 costForProfit = 1.15*cost
 
-print("You should sell this product for Rs. ", costForProfit, " to earn a 15", percentSign, " profit\n", sep = "", end = "")
+print("You should sell this product for Rs. ", costForProfit, " to earn a 15", percentSign, " profit\n", sep = "",
+      end = "")

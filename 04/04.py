@@ -8,7 +8,15 @@ cost = float(cost)
 
 costAfterDiscount = 0.9*cost
 
-print("The cost of the product after applying a 10", percentSign, " discount is Rs. ", costAfterDiscount, "\n", sep = "", end = "")
+print("The cost of the product after applying a 10", percentSign, " discount is Rs. ", costAfterDiscount, "\n",
+      sep = "", end = "")
 
-# cost = float(input("Enter the cost of the product: ")) is the same as cost = input("Enter the cost of the product: ") and cost = float(cost)
-# percentSign = % is used to print %.
+
+
+# /* Trivia
+#
+#  * cost = float(input("Enter the cost of the product: ")) is the same as
+#    cost = input("Enter the cost of the product: "); cost = float(cost)
+#  * percentSign = % is used to print %.
+#
+#  */
