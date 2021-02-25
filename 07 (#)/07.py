@@ -5,7 +5,8 @@ sum = 1
 
 for x in range(2, 10):
     sum = sum+x
-    print("The sum of the first ", x, " positive integers is ", sum, "\n", sep = "", end = "")
+    print("The sum of the first ", x, " positive integers is ", sum, "\n",
+          sep = "", end = "")
 
 
 
