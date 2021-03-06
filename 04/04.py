@@ -17,6 +17,6 @@ print("The cost of the product after applying a 10", percentSign, " discount ",
 #
 #  * cost = float(input("Enter the cost of the product: ")) is the same as
 #    cost = input("Enter the cost of the product: "); cost = float(cost)
-#  * percentSign = % is used to print %.
+#  * percentSign = "%" is used to print %.
 #
 #  */
