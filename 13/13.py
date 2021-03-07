@@ -3,15 +3,20 @@
 
 shoppingList = ["1 Packet Bread", "1 Packet Butter", "1 Litre Milk"]
 
+
 print(shoppingList, "\n\n", sep = "", end = "")
+
 
 for x in shoppingList:
     print(x, "\n", sep = "", end = "")
+
 print("\n", sep = "", end = "")
+
 
 shoppingList.append("250 Grams Curd")
 
 print(shoppingList, "\n\n", sep = "", end = "")
+
 
 shoppingList.insert(0, "500 Millilitres Oil")
 shoppingList.insert(3, "12 Eggs")
