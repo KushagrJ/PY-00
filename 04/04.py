@@ -13,6 +13,8 @@ print("The cost of the product after applying a 10", percentSign, " discount ",
 
 
 
+
+
 # /* Trivia
 #
 #  * cost = float(input("Enter the cost of the product: ")) is the same as

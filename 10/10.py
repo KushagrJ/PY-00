@@ -12,6 +12,8 @@ print(e, "\n", sep = "", end = "")
 
 
 
+
+
 # /* Trivia
 #
 #  * input().split("separator", unsignedInt) takes multiple inputs. The default separator is any whitespace. The number

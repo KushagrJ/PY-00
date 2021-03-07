@@ -16,6 +16,8 @@ print("That's it for the day!\n", sep = "", end = "")
 
 
 
+
+
 # /* Trivia
 #
 #  * The for loop assigns a new value to x every time, but nothing of this sort happens in the while loop.

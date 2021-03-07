@@ -7,6 +7,8 @@ print(a, " is a very good choice\n", sep = "", end = "")
 
 
 
+
+
 # /* Trivia
 #
 #  * Here, the input function assigns a string to a.

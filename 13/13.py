@@ -26,6 +26,8 @@ for x in shoppingList:
 
 
 
+
+
 # /* Trivia
 #
 #  * variableName = [] declares a data structure called list.

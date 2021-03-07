@@ -7,6 +7,7 @@ print("\n", sep = "", end = "")
 
 
 
+
 if (numberOfStudents > 0):
 
 
@@ -21,8 +22,9 @@ if (numberOfStudents > 0):
 
     print("\n", sep = "", end = "")
 
-    for y in range(numberOfStudents):
-        print("Enter the marks of ", listOfNames[y], ": ", sep = "", end = "")
+    for y in listOfNames:
+        print("Enter the marks obtained by ", y, ": ",
+              sep = "", end = "")
         dummyVariable2 = int(input())
         marksObtained.append(dummyVariable2)
 
@@ -92,9 +94,12 @@ if (numberOfStudents > 0):
 
 
 
+
 else:
     print("The number of students should be greater than 0!\n",
           sep = "", end = "")
+
+
 
 
 
