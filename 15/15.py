@@ -2,7 +2,8 @@
 # Python 3.8.6
 
 numberOfStudents = int(input("Enter the number of students enrolled in "
-                                  "this course: "))
+                             "this course: "))
+
 print("\n", sep = "", end = "")
 
 
