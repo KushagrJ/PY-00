@@ -31,7 +31,7 @@ for x in shoppingList:
 # /* Trivia
 #
 #  * variableName = [] declares a data structure called list.
-#  * shoppingList.append("Name of Item") adds an item to the end of shoppingList.
-#  * shoppingList.insert(unsignedInt, "Name of Item") adds an item to the position specified by unsignedInt.
+#  * shoppingList.append("Name of Item") adds an item at the end of shoppingList.
+#  * shoppingList.insert(unsignedInt, "Name of Item") adds an item at the position specified by unsignedInt.
 #
 #  */

@@ -30,5 +30,6 @@ print("Out of the ", numberOfStudents, " students, ",
 #
 #  * len(listName) returns the number of items in a list.
 #  * listName.count("Name of Item") returns the number of times an item occurs in a list.
+#  * listName.index("Name of Item") returns the index of an item.
 #
 #  */

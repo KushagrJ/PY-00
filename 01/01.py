@@ -18,5 +18,6 @@ print("The sum of ", a, " and ", b, " is ", c, "\n", sep = "", end = "")
 #    10.
 #  * To execute multiple commands in the same line, semicolons should be used. For eg., a = 10; b = 13 can also be used
 #    in this program.
+#  * Strings can be concatenated using +.
 #
 #  */

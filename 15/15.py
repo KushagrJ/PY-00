@@ -107,5 +107,8 @@ else:
 #
 #  * listName.sort() sorts a list in ascending order.
 #  * listName.reverse() reverses the order of a list.
+#  * listName[unsignedInt1:unsignedInt2+1] returns a subset of a list containing those items whose indices are in the
+#    range unsignedInt1 to unsignedInt2, including them both. The default values of unsignedInt1 and unsignedInt2+1 are
+#    0 and len(listName), respectively.
 #
 #  */
