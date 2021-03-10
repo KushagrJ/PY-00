@@ -3,4 +3,4 @@
 
 a = "My name is Kushagr Jaiswal"
 
-print(a, "\n", sep = "", end = "")
+print(a)

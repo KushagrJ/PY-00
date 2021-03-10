@@ -3,7 +3,7 @@
 
 a = input("Which operating system do you use? ")
 
-print(a, " is a very good choice\n", sep = "", end = "")
+print(a, "is a very good choice")
 
 
 

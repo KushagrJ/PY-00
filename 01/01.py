@@ -6,7 +6,7 @@ b = 13
 
 c = a+b
 
-print("The sum of ", a, " and ", b, " is ", c, "\n", sep = "", end = "")
+print("The sum of", a, "and", b, "is", c)
 
 
 

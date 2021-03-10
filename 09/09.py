@@ -3,4 +3,14 @@
 
 a = int(input(""))
 
-print(a, "\n", sep = "", end = "")
+print(a, end = "")
+
+
+
+
+
+# /* Trivia
+#
+#  * This program contains unnecessary code in order to avoid presentation errors, such as the exclusion of \n, etc.
+#
+#  */

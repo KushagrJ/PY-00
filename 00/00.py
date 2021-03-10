@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-print("Hello, World!\n", sep = "", end = "")
+print("Hello, World!")
 
 
 

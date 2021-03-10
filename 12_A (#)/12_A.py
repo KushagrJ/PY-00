@@ -5,14 +5,14 @@ a = "y"
 n = 1
 
 while (a == "y"):
-    print("Token number ", n, " may come in!\n", sep = "", end = "")
+    print("Token number", n, "may come in!")
     a = input("Continue? (y/n) ")
     while (a != "y" and a != "n"):
-        print("Choose between y and n! ", sep = "", end = "")
+        print("Choose between y and n! ", end = "")
         a = input("Continue? (y/n) ")
     n = n+1
 
-print("That's it for the day!\n", sep = "", end = "")
+print("That's it for the day!")
 
 
 

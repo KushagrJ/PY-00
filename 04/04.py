@@ -9,7 +9,7 @@ cost = float(cost)
 costAfterDiscount = 0.9*cost
 
 print("The cost of the product after applying a 10", percentSign, " discount ",
-      "is Rs. ", costAfterDiscount, "\n", sep = "", end = "")
+      "is Rs. ", costAfterDiscount, sep = "")
 
 
 

@@ -4,23 +4,21 @@
 agesOfStudents = [16, 19, 20, 18, 18, 19, 17, 19]
 
 
-print("The ages of the students enrolled in this course are :-\n",
-      sep = "", end = "")
+print("The ages of the students enrolled in this course are :-")
 
 for x in agesOfStudents:
-    print(x, "\n", sep = "", end = "")
+    print(x)
 
-print("\n", sep = "", end = "")
+print()
 
 
 numberOfStudents = len(agesOfStudents)
 numberOfEighteenYearOlds = agesOfStudents.count(18)
 numberOfNineteenYearOlds = agesOfStudents.count(19)
 
-print("Out of the ", numberOfStudents, " students, ",
-      numberOfEighteenYearOlds, " are eighteen years old and ",
-      numberOfNineteenYearOlds, " are nineteen years old.\n",
-      sep = "", end = "")
+print("Out of the", numberOfStudents, "students,",
+      numberOfEighteenYearOlds, "are eighteen years old and",
+      numberOfNineteenYearOlds, "are nineteen years old.")
 
 
 
