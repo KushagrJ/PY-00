@@ -38,26 +38,26 @@ if (numberOfStudents > 0):
 
     listOfNames.sort()
 
-    for z in range(numberOfStudents):
-        if (z+2 != numberOfStudents and z+1 != numberOfStudents):
-            print(listOfNames[z], sep = "", end = ", ")
+    for z in range(numberOfStudents):                                               # To print listOfNames like
+        if (z+1 == numberOfStudents):                                               # a, b, c, d & e instead of like
+            print(listOfNames[z], sep = "", end = " ")                              # ['a', 'b', 'c', 'd', 'e'].
         elif (z+2 == numberOfStudents):
             print(listOfNames[z], sep = "", end = " & ")
         else:
-            print(listOfNames[z], sep = "", end = " ")
+            print(listOfNames[z], sep = "", end = ", ")
 
     print("(in ascending alphabetical order).\n", sep = "", end = "")
 
 
     listOfNames.reverse()
 
-    for w in range(numberOfStudents):
-        if (w+2 != numberOfStudents and w+1 != numberOfStudents):
-            print(listOfNames[w], sep = "", end = ", ")
+    for w in range(numberOfStudents):                                               # To print listOfNames like
+        if (w+1 == numberOfStudents):                                               # a, b, c, d & e instead of like
+            print(listOfNames[w], sep = "", end = " ")                              # ['a', 'b', 'c', 'd', 'e'].
         elif (w+2 == numberOfStudents):
             print(listOfNames[w], sep = "", end = " & ")
         else:
-            print(listOfNames[w], sep = "", end = " ")
+            print(listOfNames[w], sep = "", end = ", ")
 
     print("(in descending alphabetical order).\n\n", sep = "", end = "")
 
@@ -69,26 +69,26 @@ if (numberOfStudents > 0):
 
     marksObtained.sort()
 
-    for u in range(numberOfStudents):
-        if (u+2 != numberOfStudents and u+1 != numberOfStudents):
-            print(marksObtained[u], sep = "", end = ", ")
+    for u in range(numberOfStudents):                                               # To print marksObtained like
+        if (u+1 == numberOfStudents):                                               # 1, 2, 3, 4 & 5 instead of like
+            print(marksObtained[u], sep = "", end = " ")                            # [1, 2, 3, 4, 5].
         elif (u+2 == numberOfStudents):
             print(marksObtained[u], sep = "", end = " & ")
         else:
-            print(marksObtained[u], sep = "", end = " ")
+            print(marksObtained[u], sep = "", end = ", ")
 
     print("(in ascending order).\n", sep = "", end = "")
 
 
     marksObtained.reverse()
 
-    for v in range(numberOfStudents):
-        if (v+2 != numberOfStudents and v+1 != numberOfStudents):
-            print(marksObtained[v], sep = "", end = ", ")
+    for v in range(numberOfStudents):                                               # To print marksObtained like
+        if (v+1 == numberOfStudents):                                               # 1, 2, 3, 4 & 5 instead of like
+            print(marksObtained[v], sep = "", end = " ")                            # [1, 2, 3, 4, 5].
         elif (v+2 == numberOfStudents):
             print(marksObtained[v], sep = "", end = " & ")
         else:
-            print(marksObtained[v], sep = "", end = " ")
+            print(marksObtained[v], sep = "", end = ", ")
 
     print("(in descending order).\n", sep = "", end = "")
 
