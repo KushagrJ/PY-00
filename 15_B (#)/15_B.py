@@ -142,11 +142,13 @@ main()
 #  * Unlike in C where functions can be declared at the beginning and defined after their first use, functions in Python
 #    need to be defined before their first use.
 #  * Here, return can't be used to use variables declared in one function in another function, because multiple
-#    functions need the numberOfStudents, etc., and every time numberOfStudents = get_the_number_of_students_from_user()
-#    is used in a different function (after initially assigning get_the_number_of_students_from_user()'s return value to
-#    be the numberOfStudents), the function get_the_number_of_students_from_user() is 'run again' before assigning
-#    its return value to numberOfStudents.
+#    functions need numberOfStudents, etc., and every time numberOfStudents = get_the_number_of_students_from_user() is
+#    used in a different function (after initially assigning get_the_number_of_students_from_user()'s return value to be
+#    the number of students), the function get_the_number_of_students_from_user() is 'run again' before assigning its
+#    return value to the local variable numberOfStudents of that function.
 #  * global VARIABLE_NAME declares a global variable, but the ALL_CAPS indicates that the global variable should be
 #    treated as a global constant, and its value should not be changed.
+#  * Classes can also be used to use variables declared in one function in another function of the same class, but that
+#    is very similar to using global variables.
 #
 #  */
