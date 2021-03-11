@@ -88,8 +88,7 @@ def print_the_names_after_sorting():
         else:
             print(listOfNames[w], end = ", ")
 
-    print("(in descending alphabetical order).")
-    print()
+    print("(in descending alphabetical order).\n")
 
 
 
@@ -140,13 +139,11 @@ main()
 #
 #  * Unlike in C where functions can be declared at the beginning and defined after their first use, functions in Python
 #    need to be defined before their first use.
-#  * Here, return can't be used to use variables declared in one function in another function, because multiple
-#    functions need numberOfStudents, etc., and every time numberOfStudents = get_the_number_of_students_from_user() is
-#    used in a different function (after initially assigning get_the_number_of_students_from_user()'s return value to be
-#    the number of students), the function get_the_number_of_students_from_user() is 'run again' before assigning its
-#    return value to the local variable numberOfStudents of that function.
 #  * global VARIABLE_NAME declares a global variable, but the ALL_CAPS indicates that the global variable should be
 #    treated as a global constant, and its value should not be changed.
+#  * In this program, NUMBER_OF_STUDENTS, LIST_OF_NAMES and MARKS_OBTAINED aren't purely constants, as they are set via
+#    user input (for eg., input()) and data conversion (for eg., int()). Constants should be set directly (for eg.,
+#    NUMBER_OF_DAYS_IN_A_WEEK = 7).
 #  * Classes can also be used to use variables declared in one function in another function of the same class, but that
 #    is very similar to using global variables.
 #

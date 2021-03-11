@@ -1,20 +1,34 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-numberOfStudents = int(input("Enter the number of students enrolled in "
-                             "this course: "))
+def main():
 
-print()
+    numberOfStudents = get_the_number_of_students_from_user()
+
+    if (numberOfStudents > 0):
+        listOfNames = get_the_list_of_names_from_user(numberOfStudents)
+        marksObtained = get_the_list_of_marks_obtained_from_user(listOfNames)
+        print_the_names_after_sorting(numberOfStudents, listOfNames)
+        print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained)
+    else:
+        print("The number of students should be greater than 0!")
 
 
 
+def get_the_number_of_students_from_user():
 
-if (numberOfStudents > 0):
+    numberOfStudents = int(input("Enter the number of students enrolled in "
+                                   "this course: "))
+
+    print()
+
+    return numberOfStudents
 
 
+
+def get_the_list_of_names_from_user(numberOfStudents):
 
     listOfNames = []
-    marksObtained = []
 
     for x in range(numberOfStudents):
         print("Enter the name of student no. ", x+1, ": ", sep = "", end = "")
@@ -23,6 +37,14 @@ if (numberOfStudents > 0):
 
     print()
 
+    return listOfNames
+
+
+
+def get_the_list_of_marks_obtained_from_user(listOfNames):
+
+    marksObtained = []
+
     for y in listOfNames:
         print("Enter the marks obtained by ", y, ": ", sep = "", end = "")
         dummyVariable2 = int(input())
@@ -30,6 +52,11 @@ if (numberOfStudents > 0):
 
     print()
 
+    return marksObtained
+
+
+
+def print_the_names_after_sorting(numberOfStudents, listOfNames):
 
 
     print("The name(s) of the student(s) enrolled in this course is(are) :-")
@@ -60,6 +87,9 @@ if (numberOfStudents > 0):
 
     print("(in descending alphabetical order).\n")
 
+
+
+def print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained):
 
 
     print("The marks obtained by the student(s) enrolled in this course",
@@ -93,9 +123,7 @@ if (numberOfStudents > 0):
 
 
 
-
-else:
-    print("The number of students should be greater than 0!")
+main()
 
 
 
@@ -103,10 +131,13 @@ else:
 
 # /* Trivia
 #
-#  * listName.sort() sorts a list in ascending order.
-#  * listName.reverse() reverses the order of a list.
-#  * listName[unsignedInt1:unsignedInt2+1] returns a subset of a list containing those items whose indices are in the
-#    range unsignedInt1 to unsignedInt2, including them both. The default values of unsignedInt1 and unsignedInt2+1 are
-#    0 and len(listName), respectively.
+#  * numberOfStudents = get_the_number_of_students_from_user() creates a local variable called numberOfStudents inside
+#    the main() function, 'runs' the function called get_the_number_of_students_from_user() and assign's
+#    get_the_number_of_students_from_user()'s return value to the local variable numberOfStudents.
+#    [Similarly for others]
+#  * numberOfStudents in 'listOfNames = get_the_list_of_names_from_user(numberOfStudents)' and numberOfStudents in
+#    'def get_the_list_of_names_from_user(numberOfStudents):' are different from each other. They are just named the
+#    same to avoid confusion.
+#    [Similarly for others]
 #
 #  */
