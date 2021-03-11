@@ -18,7 +18,7 @@ def main():
 def get_the_number_of_students_from_user():
 
     numberOfStudents = int(input("Enter the number of students enrolled in "
-                                   "this course: "))
+                                 "this course: "))
 
     print()
 
