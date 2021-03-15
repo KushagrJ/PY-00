@@ -16,10 +16,13 @@ print(c, end = "")
 
 # /* Trivia
 #
-#  * input().split("separator", unsignedInt) takes multiple inputs. The default separator is any whitespace. The number
-#    of inputs is equal to unsignedInt+1. The default value of unsignedInt is -1, which means that any number of inputs
-#    can be taken.
+#  * input().split("separator", unsignedInt) takes multiple inputs as strings. The default separator is any whitespace.
+#    The number of inputs is equal to unsignedInt+1. The default value of unsignedInt is -1, which means that any number
+#    of inputs can be taken.
 #  * int(input()).split(), etc. are not valid.
+#  * a, b = input().split() makes the interpreter expect only 2 inputs. a = input().split() will take any number of
+#    inputs and assign a list of the inputs to a.
+#
 #  * This program contains unnecessary code in order to avoid presentation errors, such as the exclusion of \n, etc.
 #
 #  */

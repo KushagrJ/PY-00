@@ -17,7 +17,7 @@ def main():
 
     trimmedMean2 = get_the_trimmed_mean_using_scipy(list)
 
-    if (trimmedMean1 == trimmedMean2):
+    if trimmedMean1 == trimmedMean2:
         percentSign = "%"
         print("The 10", percentSign, " trimmed mean of the given data is ",
               trimmedMean1, sep = "")

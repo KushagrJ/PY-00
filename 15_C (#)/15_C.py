@@ -5,7 +5,7 @@ def main():
 
     numberOfStudents = get_the_number_of_students_from_user()
 
-    if (numberOfStudents > 0):
+    if numberOfStudents > 0:
         listOfNames = get_the_list_of_names_from_user(numberOfStudents)
         marksObtained = get_the_list_of_marks_obtained_from_user(listOfNames)
         print_the_names_after_sorting(numberOfStudents, listOfNames)
@@ -65,9 +65,9 @@ def print_the_names_after_sorting(numberOfStudents, listOfNames):
     listOfNames.sort()
 
     for z in range(numberOfStudents):                                               # To print listOfNames like
-        if (z+1 == numberOfStudents):                                               # a, b, c, d & e instead of like
+        if z+1 == numberOfStudents:                                                 # a, b, c, d & e instead of like
             print(listOfNames[z], end = " ")                                        # ['a', 'b', 'c', 'd', 'e'].
-        elif (z+2 == numberOfStudents):
+        elif z+2 == numberOfStudents:
             print(listOfNames[z], end = " & ")
         else:
             print(listOfNames[z], end = ", ")
@@ -78,9 +78,9 @@ def print_the_names_after_sorting(numberOfStudents, listOfNames):
     listOfNames.reverse()
 
     for w in range(numberOfStudents):                                               # To print listOfNames like
-        if (w+1 == numberOfStudents):                                               # a, b, c, d & e instead of like
+        if w+1 == numberOfStudents:                                                 # a, b, c, d & e instead of like
             print(listOfNames[w], end = " ")                                        # ['a', 'b', 'c', 'd', 'e'].
-        elif (w+2 == numberOfStudents):
+        elif w+2 == numberOfStudents:
             print(listOfNames[w], end = " & ")
         else:
             print(listOfNames[w], end = ", ")
@@ -99,9 +99,9 @@ def print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained):
     marksObtained.sort()
 
     for u in range(numberOfStudents):                                               # To print marksObtained like
-        if (u+1 == numberOfStudents):                                               # 1, 2, 3, 4 & 5 instead of like
+        if u+1 == numberOfStudents:                                                 # 1, 2, 3, 4 & 5 instead of like
             print(marksObtained[u], end = " ")                                      # [1, 2, 3, 4, 5].
-        elif (u+2 == numberOfStudents):
+        elif u+2 == numberOfStudents:
             print(marksObtained[u], end = " & ")
         else:
             print(marksObtained[u], end = ", ")
@@ -112,9 +112,9 @@ def print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained):
     marksObtained.reverse()
 
     for v in range(numberOfStudents):                                               # To print marksObtained like
-        if (v+1 == numberOfStudents):                                               # 1, 2, 3, 4 & 5 instead of like
+        if v+1 == numberOfStudents:                                                 # 1, 2, 3, 4 & 5 instead of like
             print(marksObtained[v], end = " ")                                      # [1, 2, 3, 4, 5].
-        elif (v+2 == numberOfStudents):
+        elif v+2 == numberOfStudents:
             print(marksObtained[v], end = " & ")
         else:
             print(marksObtained[v], end = ", ")

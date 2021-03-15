@@ -5,9 +5,9 @@ a = "y"
 n = 1
 
 
-while (a != "n"):
+while a != "n":
 
-    if (a == "y"):
+    if a == "y":
         print("Token number", n, "may come in!")
         a = input("Continue? (y/n) ")
         n = n+1

@@ -7,7 +7,7 @@ figure1 = plt.figure(1)
 plt.plot([1, 2, 3, 4])
 
 figure2 = plt.figure(2)
-plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro')
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16], "ro")
 plt.xlabel("Integers")
 plt.ylabel("Squares")
 
@@ -25,7 +25,9 @@ plt.show()
 #  * 1, 2, 3 & 4 are taken as the y-coordinates in plt.plot([1, 2, 3, 4]).
 #  * 1, 2, 3 & 4 and 1, 4, 9 & 16 are taken as the x- and y-coordinates in plt.plot([1, 2, 3, 4], [1, 4, 9, 16]),
 #    respectively.
-#  * 'ro' in plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro') displays the graph as red dots. Other options include 'r--' for
-#    red dashes, 'bs' for blue squares and 'g^' for green triangles, among others.
+#  * "ro" in plt.plot([1, 2, 3, 4], [1, 4, 9, 16], "ro") displays the graph as discrete red dots. Other options include
+#    "r-" for continuous red lines, "r--" for continuous red dashes, "rs" for discrete red squares, "r^" for discrete
+#    red triangles, "r+" for discrete red pluses and "r*" for discrete red stars, among others. The default option is
+#    continuous blue lines. The 'r' can be replaced with 'b' for blue, 'g' for green, etc.
 #
 #  */

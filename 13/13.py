@@ -32,8 +32,12 @@ for x in shoppingList:
 
 # /* Trivia
 #
-#  * variableName = [] declares a data structure called list.
+#  * variableName = [] declares a list.
 #  * shoppingList.append("Name of Item") adds an item at the end of shoppingList.
-#  * shoppingList.insert(unsignedInt, "Name of Item") adds an item at the position specified by unsignedInt.
+#  * shoppingList.insert(unsignedInt, "Name of Item") adds an item at the index specified by unsignedInt.
+#  * shoppintList[unsignedInt] = "Name of New Item" changes the item at the index specified by unsignedInt.
+#  * for x in shoppingList: can be written as for x in ["1 Packet Bread", "1 Packet Butter", "1 Litre Milk"]: as well.
+#    [Similarly for other sequences]
+#  * list(iterableName) returns a list containing all of the elements in the specified iterable.
 #
 #  */
