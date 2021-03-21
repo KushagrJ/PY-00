@@ -16,9 +16,11 @@ else:
 
 # /* Trivia
 #
-#  * Negative indexing starts from where a sequence ends. So, [-1] corresponds to the last element of a sequence, [-2]
-#    corresponds to the second last element of a sequence, and so on.
+#  * Negative indexing starts from where a sequence ends. So, [-1] corresponds
+#    to the last element of a sequence, [-2] corresponds to the second last
+#    element of a sequence, and so on.
 #
-#  * This program contains unnecessary code in order to avoid presentation errors, such as the exclusion of \n, etc.
+#  * This program contains unnecessary code in order to avoid presentation
+#    errors, such as the exclusion of \n, etc.
 #
 #  */

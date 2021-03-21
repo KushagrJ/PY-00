@@ -37,9 +37,10 @@ if numberOfStudents > 0:
 
     listOfNames.sort()
 
-    for z in range(numberOfStudents):                                               # To print listOfNames like
-        if z+1 == numberOfStudents:                                                 # a, b, c, d & e instead of like
-            print(listOfNames[z], end = " ")                                        # ['a', 'b', 'c', 'd', 'e'].
+    # To print the list like a, b, c & d instead of like ['a', 'b', 'c', 'd'].
+    for z in range(numberOfStudents):
+        if z+1 == numberOfStudents:
+            print(listOfNames[z], end = " ")
         elif z+2 == numberOfStudents:
             print(listOfNames[z], end = " & ")
         else:
@@ -50,9 +51,10 @@ if numberOfStudents > 0:
 
     listOfNames.reverse()
 
-    for w in range(numberOfStudents):                                               # To print listOfNames like
-        if w+1 == numberOfStudents:                                                 # a, b, c, d & e instead of like
-            print(listOfNames[w], end = " ")                                        # ['a', 'b', 'c', 'd', 'e'].
+    # To print the list like a, b, c & d instead of like ['a', 'b', 'c', 'd'].
+    for w in range(numberOfStudents):
+        if w+1 == numberOfStudents:
+            print(listOfNames[w], end = " ")
         elif w+2 == numberOfStudents:
             print(listOfNames[w], end = " & ")
         else:
@@ -68,9 +70,10 @@ if numberOfStudents > 0:
 
     marksObtained.sort()
 
-    for u in range(numberOfStudents):                                               # To print marksObtained like
-        if u+1 == numberOfStudents:                                                 # 1, 2, 3, 4 & 5 instead of like
-            print(marksObtained[u], end = " ")                                      # [1, 2, 3, 4, 5].
+    # To print the list like 1, 2, 3 & 4 instead of like [1, 2, 3, 4].
+    for u in range(numberOfStudents):
+        if u+1 == numberOfStudents:
+            print(marksObtained[u], end = " ")
         elif u+2 == numberOfStudents:
             print(marksObtained[u], end = " & ")
         else:
@@ -81,9 +84,10 @@ if numberOfStudents > 0:
 
     marksObtained.reverse()
 
-    for v in range(numberOfStudents):                                               # To print marksObtained like
-        if v+1 == numberOfStudents:                                                 # 1, 2, 3, 4 & 5 instead of like
-            print(marksObtained[v], end = " ")                                      # [1, 2, 3, 4, 5].
+    # To print the list like 1, 2, 3 & 4 instead of like [1, 2, 3, 4].
+    for v in range(numberOfStudents):
+        if v+1 == numberOfStudents:
+            print(marksObtained[v], end = " ")
         elif v+2 == numberOfStudents:
             print(marksObtained[v], end = " & ")
         else:
@@ -105,10 +109,12 @@ else:
 #
 #  * listName.sort() sorts the specified list in ascending order.
 #  * listName.reverse() reverses the order of the specified list.
-#  * listName[unsignedInt1 : unsignedInt2+1 : positiveInt] returns a subset of the specified list containing those items
-#    whose indices are in the range unsignedInt1 to unsignedInt2, including them both. This is known as slicing.
-#    positiveInt sets the incrementation. The default values of unsignedInt1, unsignedInt2+1 and positiveInt are 0,
-#    len(listName) and 1, respectively.
+#  * listName[unsignedInt1 : unsignedInt2+1 : positiveInt] returns a subset of
+#    the specified list containing those items whose indices are in the range
+#    unsignedInt1 to unsignedInt2, including them both. This is known as
+#    slicing. positiveInt sets the incrementation. The default values of
+#    unsignedInt1, unsignedInt2+1 and positiveInt are 0, len(listName) and 1,
+#    respectively.
 #    [Similarly for other sequences]
 #
 #  */

@@ -29,8 +29,9 @@ def print_the_list_in_ascending_order(list, numberOfItems):
 
     print("The given data (in ascending order) is :-")
 
-    for x in range(numberOfItems):                                                  # To print list like 1, 2, 3, 4 & 5
-        if (x+1 == numberOfItems):                                                  # instead of like [1, 2, 3, 4, 5].
+    # To print the list like 1, 2, 3 & 4 instead of like [1, 2, 3, 4].
+    for x in range(numberOfItems):
+        if (x+1 == numberOfItems):
             print(list[x], "\n")
         elif (x+2 == numberOfItems):
             print(list[x], end = " & ")
@@ -72,8 +73,9 @@ main()
 
 # /* Trivia
 #
-#  * The number of items to reject from either side to calculate the 10% trimmed mean is given by
-#    max{n | n <= x, integer n}, where x is equal to 0.1*numberOfItems. This is also known as the floor function or the
-#    greatest integer function.
+#  * The number of items to reject from either side to calculate the 10% trimmed
+#    mean is given by max{n | n <= x, integer n}, where x is equal to
+#    0.1*numberOfItems. This is also known as the floor function or the greatest
+#    integer function.
 #
 #  */

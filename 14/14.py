@@ -28,9 +28,11 @@ print("Out of the", numberOfStudents, "students,",
 #
 #  * len(listName) returns the number of items in the specified list.
 #    [Similarly for other sequences]
-#  * listName.count("Name of Item") returns the number of times the specified item occurs in the specified list.
+#  * listName.count("Name of Item") returns the number of times the specified
+#    item occurs in the specified list.
 #    [Similarly for other sequences]
-#  * listName.index("Name of Item") returns the index of the first occurrence of the specified item.
+#  * listName.index("Name of Item") returns the index of the first occurrence of
+#    the specified item.
 #    [Similarly for other sequences]
 #
 #  */
