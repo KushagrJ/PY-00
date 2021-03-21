@@ -3,7 +3,7 @@
 
 sum = 1
 
-for x in range(2, 10):
+for x in range(2,10):
     sum = sum+x
     print("The sum of the first", x, "positive integers is", sum)
 
