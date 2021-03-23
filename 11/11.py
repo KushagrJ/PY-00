@@ -7,17 +7,6 @@ a = int(a)
 b = int(b)
 
 if (a>b):
-    print(a, end = "")
+    print(a)
 else:
-    print(b, end = "")
-
-
-
-
-
-# /* Trivia
-#
-#  * This program contains unnecessary code in order to avoid presentation
-#    errors, such as the exclusion of \n, etc.
-#
-#  */
+    print(b)

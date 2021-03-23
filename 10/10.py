@@ -8,7 +8,7 @@ b = int(b)
 
 c = a*b
 
-print(c, end = "")
+print(c)
 
 
 
@@ -24,8 +24,5 @@ print(c, end = "")
 #  * a, b = input().split() makes the interpreter expect only 2 inputs.
 #    a = input().split() will take any number of inputs and assign a list of the
 #    inputs to a.
-#
-#  * This program contains unnecessary code in order to avoid presentation
-#    errors, such as the exclusion of \n, etc.
 #
 #  */

@@ -13,7 +13,7 @@ for x in inputList:
         pass
 
 
-print(*outputList, end = "")
+print(*outputList)
 
 
 
@@ -28,8 +28,5 @@ print(*outputList, end = "")
 #    as list comprehension.
 #    For eg., fruitsStartingWithA = [x for x in fruits if x[0] == "A"]
 #  * abs(number) returns the absolute value of the specified number.
-#
-#  * This program contains unnecessary code in order to avoid presentation
-#    errors, such as the exclusion of \n, etc.
 #
 #  */

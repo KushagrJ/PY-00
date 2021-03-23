@@ -14,15 +14,4 @@ for x in inputList:
         pass
 
 
-print(*outputList, end = "")
-
-
-
-
-
-# /* Trivia
-#
-#  * This program contains unnecessary code in order to avoid presentation
-#    errors, such as the exclusion of \n, etc.
-#
-#  */
+print(*outputList)

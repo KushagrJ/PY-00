@@ -30,6 +30,12 @@ print("That's it for the day!")
 #  * The for loop is used when an operation is to be done on each member of an
 #    iterable, in order.
 #
+#  * break terminates the current loop (for/while) and resumes execution at the
+#    next statement.
+#    continue rejects all the remaining statements in the current iteration of
+#    a loop (for/while) and moves the control back to the top of the loop.
+#    pass is a null operation. Nothing happens when it executes.
+#
 #  * An iterable is anything that can be looped over with a for loop. Sequences
 #    (strings, lists, tuples, etc.), sets, dictionaries, etc. are iterables.
 #  * Sequences are iterables having a specific set of features, such as indexing
