@@ -32,6 +32,17 @@ def main():
         print("The game has ended in a tie!")
 
 
+def get_the_names_of_the_players():
+
+    player1 = input("Enter the name of player 1: ")
+
+    player2 = input("Enter the name of player 2: ")
+
+    print()
+
+    return player1, player2
+
+
 def get_a_jumbled_word_from_the_list_of_words():
 
     listOfWords = ["rainbow", "computer", "science", "programming", "board",
@@ -42,17 +53,6 @@ def get_a_jumbled_word_from_the_list_of_words():
     jumbledWord = "".join(random.sample(chosenWord, len(chosenWord)))
 
     return chosenWord, jumbledWord
-
-
-def get_the_names_of_the_players():
-
-    player1 = input("Enter the name of player 1: ")
-
-    player2 = input("Enter the name of player 2: ")
-
-    print()
-
-    return player1, player2
 
 
 def play(chosenWord, jumbledWord, player, points):
