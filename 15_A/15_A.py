@@ -109,6 +109,7 @@ else:
 #
 #  * listName.sort() sorts the specified list in ascending order.
 #  * listName.reverse() reverses the order of the specified list.
+#
 #  * listName[unsignedInt1 : unsignedInt2+1 : positiveInt] returns a subset of
 #    the specified list containing those items whose indices are in the range
 #    unsignedInt1 to unsignedInt2, including them both. This is known as
@@ -116,5 +117,20 @@ else:
 #    unsignedInt1, unsignedInt2+1 and positiveInt are 0, len(listName) and 1,
 #    respectively.
 #    [Similarly for other sequences]
+#
+#    For negative incrementations,
+#    a[::-1] returns all items (reversed),
+#    a[1::-1] returns the first two items (reversed),
+#    a[:-3:-1] returns the last two (not four) items (reversed),
+#    a[-3::-1] returns all items except the last two (reversed), and so on.
+#    [For s[i:j], (i) if i is omitted/'None', then it is treated like 0.
+#                 (ii) if j is omitted/'None', then it is treated like len(s).
+#     For s[i:j:k], (i) if i or j are omitted/'None', then they become the 'end'
+#                       values (which end depends on the sign of k).
+#                       i and j will always represent the start and stop values,
+#                       respectively. Only their ends will change depending on
+#                       the sign of k.
+#                   (ii) if k is omitted/'None', then it is treated as 1.]
+#    [Slices like s[2:5:-1] don't work. They return an empty sequence.]
 #
 #  */

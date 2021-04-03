@@ -25,7 +25,7 @@ print(a)
 #    sequences, etc.). But, for lists (a mutable sequence), a+=b is not the
 #    same as a = a+b.
 #    [Similarly for -, *, /, //, **, %, etc. for numerical data types]
-#  * For numerical data types, a//b is similar to int(a/b).
+#  * For numerical data types, a//b is similar to floor of a/b.
 #  * For numerical data types, a**b means a raised to the power of b.
 #
 #  */

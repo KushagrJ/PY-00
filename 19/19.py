@@ -51,7 +51,7 @@ print("Converting", a, "into", c, "took", numberOfIterations, "iterations")
 #    range int1 to int2, including them both.
 #  * random.randrange(int1, int2+1, positiveInt) returns a randomly selected
 #    integer from the range int1 to int2, including them both. positiveInt sets
-#    the incrementation. The default values of Int1 and positiveInt are 0 and 1,
+#    the incrementation. The default values of int1 and positiveInt are 0 and 1,
 #    respectively.
 #  * random.random() returns a randomly selected floating-point value belonging
 #    to [0, 1).

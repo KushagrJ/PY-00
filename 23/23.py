@@ -80,9 +80,9 @@ for i in magicSquare:
 #     then the position of the next number becomes immediately left to that of
 #     the current number.]
 #
-#  * 2-dimensional arrays/lists are basically lists within a list. The multiple
-#    lists within a larger list can be thought of as rows, with their elements'
-#    indices representing the column numbers.
+#  * 2-dimensional arrays/lists can be thought of as lists within a list. The
+#    multiple lists within a larger list can be thought of as rows, with their
+#    elements' indices representing the column numbers.
 #    For eg., list = [[1,2,3],[4,5,6],[7,8,9]]; list[1][2] returns 6.
 #
 #  */

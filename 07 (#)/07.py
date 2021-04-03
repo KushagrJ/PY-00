@@ -18,6 +18,7 @@ for x in range(2,10):
 #    unsignedInt2, no matter x's previous value. positiveInt sets the
 #    incrementation. The default values of unsignedInt1 and positiveInt are 0
 #    and 1, respectively.
+#    [The arguments of range() can be negative numbers as well]
 #  * When only one value is specified in the for loop's range, it is taken to be
 #    unsignedInt2+1. When two values are specified in the for loop's range, they
 #    are taken to be unsignedInt1 and unsignedInt2+1, respectively.
