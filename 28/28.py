@@ -16,3 +16,13 @@ if m+n > 20 or n >= m:
 else:
     numberOfWays = int((factorial(m)*factorial(m+1))/(factorial(m+1-n)))
     print(numberOfWays)
+
+
+
+
+
+# /* Trivia
+#
+#  * Recursion can also be used to calculate factorials.
+#
+#  */

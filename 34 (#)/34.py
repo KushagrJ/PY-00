@@ -52,4 +52,6 @@ main()
 #    algorithm eliminates the half in which the target value cannot lie in each
 #    iteration.
 #
+#  * Recursion can also be used to perform binary search.
+#
 #  */
