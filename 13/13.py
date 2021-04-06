@@ -40,7 +40,11 @@ for x in shoppingList:
 #  * shoppingList[index] returns the item at the specified index.
 #  * shoppingList.remove(item) removes the specified item from shoppingList.
 #    Also, shoppingList.remove(shoppingList[index]) works as well.
-#  * shoppingList[index] = item changes the item at the specified index.
+#    Similarly, del shoppingList[index] removes the item with the specified
+#    index from shoppingList.
+#  * shoppingList.pop(index) removes the item with the specified index from
+#    shoppingList, alongwith returning the item removed.
+#  * shoppingList[index] = item changes the item with the specified index.
 #  * for x in shoppingList: can be written as
 #    for x in ["1 Packet Bread", "1 Packet Butter", "1 Litre Milk"]: as well.
 #    [Similarly for other sequences]

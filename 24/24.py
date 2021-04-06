@@ -45,5 +45,10 @@ else:
 #
 #  * import string; string.ascii_letters returns
 #    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#  * import string; string.ascii_lowercase returns 'abcdefghijklmnopqrstuvwxyz'
+#  * import string; string.ascii_uppercase returns 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#  * import string; string.digits returns '0123456789'
+#  * import string; string.punctuation returns
+#    '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 #
 #  */
