@@ -51,4 +51,11 @@ else:
 #  * import string; string.punctuation returns
 #    '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 #
+#  * Unicode is a superset of ASCII, and the numbers 0 to 127 have the same
+#    meaning in ASCII as they have in Unicode.
+#  * ord(character) returns the number representing the Unicode code of the
+#    specified character.
+#  * chr(integer) returns the character whose Unicode code is represented by the
+#    specified integer.
+#
 #  */

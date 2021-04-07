@@ -59,6 +59,9 @@ print(r)
 #  * a = "Kushagr"; a.lower() returns 'kushagr'
 #  * a = "Kushagr"; a.swapcase() returns 'kUSHAGR'
 #
+#  * string.isalpha() returns True if all the characters in the specified
+#    string are alphabetical (i.e. a-z or A-Z).
+#
 #  * 'if x is None' is better than 'if not x'.
 #
 #  */
