@@ -47,6 +47,9 @@ print("Converting", a, "into", c, "took", numberOfIterations, "iterations")
 #  * fileName.close() closes the specified file object. This is not required if
 #    'with' is used.
 #
+#  * from PIL import Image; a = Image.open("path/to/image/file"); a.show()
+#    displays the specified image.
+#
 #  * random.randint(int1, int2) returns a randomly selected integer from the
 #    range int1 to int2, including them both.
 #  * random.randrange(int1, int2+1, positiveInt) returns a randomly selected

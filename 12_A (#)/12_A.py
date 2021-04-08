@@ -32,8 +32,11 @@ print("That's it for the day!")
 #
 #  * break terminates the current loop (for/while) and resumes execution at the
 #    next statement.
+#    [For nested loops, break only terminates the loop it is placed in]
 #    continue rejects all the remaining statements in the current iteration of
 #    a loop (for/while) and moves the control back to the top of the loop.
+#    [For nested loops, continue only rejects the remaining statements of the
+#    loop it is placed in, and moves the control back to the top of that loop]
 #    pass is a null operation. Nothing happens when it executes.
 #
 #  * An iterable is anything that can be looped over with a for loop. Sequences
