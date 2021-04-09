@@ -10,7 +10,7 @@ def main():
 
     a = "y"
     player = "X"
-    while "-" in playingBoard and a == "y":
+    while a == "y":
         playingBoard, player, a = play(playingBoard, player, a)
 
 
@@ -30,7 +30,7 @@ def play(playingBoard, player, a):
         row = int(row)-1; column = int(column)-1
 
     playingBoard[row, column] = player
-    print(); print(numpy.matrix(playingBoard), "\n")
+    print(); print(playingBoard, "\n")
 
     if player == "X":
         player = "O"
@@ -57,7 +57,8 @@ def check_whether_the_player_has_won(player, playingBoard, a):
                     count = count+1
             if count == 3:
                 print("Congratulations!", player, "has won the game!"); a = "n"
-                break
+        if a == "n":
+            break
 
         # To check the columns.
         for c in range(3):
@@ -67,7 +68,8 @@ def check_whether_the_player_has_won(player, playingBoard, a):
                     count = count+1
             if count == 3:
                 print("Congratulations!", player, "has won the game!"); a = "n"
-                break
+        if a == "n":
+            break
 
         # To check the first diagonal.
         count = 0
@@ -77,7 +79,8 @@ def check_whether_the_player_has_won(player, playingBoard, a):
                 count = count+1
             if count == 3:
                 print("Congratulations!", player, "has won the game!"); a = "n"
-                break
+        if a == "n":
+            break
 
         # To check the second diagonal.
         count = 0
@@ -87,7 +90,8 @@ def check_whether_the_player_has_won(player, playingBoard, a):
                 count = count+1
             if count == 3:
                 print("Congratulations!", player, "has won the game!"); a = "n"
-                break
+        if a == "n":
+            break
 
         if "-" not in playingBoard:
             print("The game has ended in a draw!"); a = "n"
@@ -105,15 +109,21 @@ main()
 
 # /* Trivia
 #
+#  * Since the ninth turn will always be X's, therefore if X doesn't win in the
+#    ninth (i.e. final) turn, then the game will end in a draw. There is no need
+#    to check for O.
+#
 #  * Lists within a list can also be used instead of numpy arrays.
 #  * Numpy only supports rectangular and homogeneous arrays, as opposed to
 #    lists.
 #  * For numpy arrays, arr[i][j] and arr[i,j] both can be used to access an
 #    element. For lists within a list, arr[i,j] doesn't work.
+#  * print(playingBoard) is the same as print(numpy.matrix(playingBoard)), as
+#    playingBoard is already a numpy array.
 #
-#  * a = [[1,2,3],[4,5,6],[7,8,9]]; 1 in a returns False
+#  * a = [[1,2,3],[4,5,6],[7,8,9]]; 1 in a returns False.
 #  * import numpy; a = numpy.array([[1,2,3],[4,5,6],[7,8,9]]); 1 in a returns
-#    true
+#    True.
 #
 #  * while row or column not in ["1","2","3"]: doesn't work.
 #
