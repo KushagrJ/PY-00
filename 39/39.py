@@ -77,9 +77,8 @@ def check_whether_the_player_has_won(player, playingBoard, a):
             c = r
             if playingBoard[r,c] == player:
                 count = count+1
-            if count == 3:
-                print("Congratulations!", player, "has won the game!"); a = "n"
-        if a == "n":
+        if count == 3:
+            print("Congratulations!", player, "has won the game!"); a = "n"
             break
 
         # To check the second diagonal.
@@ -88,9 +87,8 @@ def check_whether_the_player_has_won(player, playingBoard, a):
             c = 2-r
             if playingBoard[r,c] == player:
                 count = count+1
-            if count == 3:
-                print("Congratulations!", player, "has won the game!"); a = "n"
-        if a == "n":
+        if count == 3:
+            print("Congratulations!", player, "has won the game!"); a = "n"
             break
 
         if "-" not in playingBoard:
