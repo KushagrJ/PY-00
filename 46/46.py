@@ -1,14 +1,35 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-list1 = input().split(); list2 = input().split()
+import turtle, random
 
-string1 = ''.join(list1); string2 = ''.join(list2)
+listOfPenColors = ["white", "yellow", "brown", "red", "blue", "green", "orange",
+                   "pink", "violet", "grey", "cyan"]
 
-if string2.find(string1) == 0:
-    print("Yes")
-else:
-    print("No")
+turtle.bgcolor("black")
+myTurtle = turtle.Turtle(); myTurtle.setpos(-250,250); myTurtle.penup()
+distanceToMoveWhenCalled = 25
+
+rows = 20; columns = 22;
+rowCounterForSpiral = rows; columnCounterForSpiral = columns
+
+while rowCounterForSpiral > 0 and columnCounterForSpiral > 0:
+
+    myTurtle.color(random.choice(listOfPenColors))
+    for x in range(rowCounterForSpiral):
+        myTurtle.dot()
+        myTurtle.forward(distanceToMoveWhenCalled)
+    myTurtle.right(90)
+    rowCounterForSpiral = rowCounterForSpiral-1
+
+    myTurtle.color(random.choice(listOfPenColors))
+    for y in range(columnCounterForSpiral):
+        myTurtle.dot()
+        myTurtle.forward(distanceToMoveWhenCalled)
+    myTurtle.right(90)
+    columnCounterForSpiral = columnCounterForSpiral-1
+
+turtle.Screen().exitonclick()
 
 
 
@@ -16,10 +37,8 @@ else:
 
 # /* Trivia
 #
-#  * string1.find(string2) returns the starting index of the first occurrence
-#    of string2 in string1. If string2 is not found in string1, then it
-#    returns -1.
-#  * find() is similar to index(), but index() raises ValueError when the string
-#    is not found, instead of returning -1.
+#  * myTurtle.dot(size, color) prints a dot with the specified size and color.
+#    If the size is not specified, then a default value is used. If the color is
+#    not specified, then the pen color is used.
 #
 #  */

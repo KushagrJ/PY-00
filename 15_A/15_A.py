@@ -108,6 +108,7 @@ else:
 # /* Trivia
 #
 #  * listName.sort() sorts the specified list in ascending order.
+#    [This doesn't work for lists containing numerical and string elements both]
 #  * listName.reverse() reverses the order of the specified list.
 #
 #  * listName[unsignedInt1 : unsignedInt2+1 : positiveInt] returns a subset of
