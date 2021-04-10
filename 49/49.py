@@ -2,23 +2,33 @@
 # Python 3.8.6
 
 a = input().split(",")
-b = [int(i) for i in input().split(",")]
-c = {}
-positionOfToken = 0
+
+numberOfSnakes = 0; numberOfLadders = 0
 
 for x in a:
-    u = x.split(":")
-    startOfToken = int(u[0].strip()); endOfToken = int(u[1].strip())
-    c[startOfToken] = endOfToken
 
-for y in b:
+    b = x.split(":")
+    startOfToken = int(b[0].strip()); endOfToken = int(b[1].strip())
 
-    positionOfToken = positionOfToken+y
+    if startOfToken < endOfToken:
+        numberOfLadders = numberOfLadders+1
+    elif startOfToken > endOfToken:
+        numberOfSnakes = numberOfSnakes+1
 
-    if positionOfToken in c:
-        positionOfToken = c[positionOfToken]
+print(numberOfSnakes, numberOfLadders)
 
-if positionOfToken >= 100:
-    print("Yes")
-else:
-    print("No")
+
+
+
+
+# /* Trivia
+#
+#  * string.strip(characters) removes the specified leading and trailing
+#    characters from the specified string, and returns the trimmed string. If no
+#    characters are specified, then all of the leading and trailing whitespaces
+#    are removed.
+#    [The characters need to be written together as a single string]
+#  * int(), float(), etc. also trim the leading and trailing whitespaces,
+#    without the use of strip().
+#
+#  */

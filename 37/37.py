@@ -1,17 +1,24 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-a = list(map(int, input().split())); a.sort()
-b = []
-k = int(input())
+a = list(map(int, input().split()))
+n = len(a)
 
-for x in a:
-    if x not in b:
-        b.append(x)
-    else:
-        pass
+numberOfSwaps = 0
 
-sum = b[-k]+b[k-1]; print(sum)
+for x in range(1,n):
+
+    for y in range(n-x):
+
+        if a[y] > a[y+1]:
+            temp = a[y]
+            a[y] = a[y+1]
+            a[y+1] = temp
+            numberOfSwaps = numberOfSwaps+1
+        else:
+            pass
+
+print(numberOfSwaps)
 
 
 
@@ -19,6 +26,9 @@ sum = b[-k]+b[k-1]; print(sum)
 
 # /* Trivia
 #
-#  * Given that the inputs are logically valid.
+#  * map(function, iterable(s)) executes the specified function for each item in
+#    the given iterable(s). For multiple iterables, the function should have one
+#    parameter for each iterable.
+#    [Used here as an alternative for list comprehension]
 #
 #  */

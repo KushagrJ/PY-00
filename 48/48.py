@@ -1,21 +1,14 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-a = input().split(",")
+list1 = input().split(); list2 = input().split()
 
-numberOfSnakes = 0; numberOfLadders = 0
+string1 = ''.join(list1); string2 = ''.join(list2)
 
-for x in a:
-
-    b = x.split(":")
-    startOfToken = int(b[0].strip()); endOfToken = int(b[1].strip())
-
-    if startOfToken < endOfToken:
-        numberOfLadders = numberOfLadders+1
-    elif startOfToken > endOfToken:
-        numberOfSnakes = numberOfSnakes+1
-
-print(numberOfSnakes, numberOfLadders)
+if string2.find(string1) == 0:
+    print("Yes")
+else:
+    print("No")
 
 
 
@@ -23,11 +16,10 @@ print(numberOfSnakes, numberOfLadders)
 
 # /* Trivia
 #
-#  * string.strip(characters) removes the specified leading and trailing
-#    characters from the specified string, and returns the trimmed string. If no
-#    characters are specified, then all of the leading and trailing whitespaces
-#    are removed.
-#    [The characters need to be written together as a single string]
-#  * int(), float(), etc. also trim the leading and trailing whitespaces.
+#  * string1.find(string2) returns the starting index of the first occurrence
+#    of string2 in string1. If string2 is not found in string1, then it
+#    returns -1.
+#  * find() is similar to index(), but index() raises ValueError when the string
+#    is not found, instead of returning -1.
 #
 #  */

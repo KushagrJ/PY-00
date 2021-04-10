@@ -3,34 +3,28 @@
 
 def main():
 
-    print("Enter a list of integers: ", end = "")
-    listOfNumbers = [int(i) for i in input().split()]
-    listOfNumbers.sort()
+    print("Enter the integers to be sorted: ", end = "")
+    a = [int(i) for i in input().split()]
 
-    targetValue = int(input("Enter the integer to be searched: "))
-    print()
-
-    binary_search(listOfNumbers, targetValue)
+    bubble_sort(a)
 
 
-def binary_search(listOfNumbers, targetValue):
+def bubble_sort(a):
 
-    startingIndex = 0
-    endingIndex = len(listOfNumbers)-1
-    foundTargetValue = "n"
+    n = len(a)
 
-    while startingIndex <= endingIndex and foundTargetValue == "n":
+    for x in range(1,n):
 
-        middle = int((startingIndex+endingIndex)//2)
+        for y in range(n-x):
 
-        if targetValue == listOfNumbers[middle]:
-            foundTargetValue = "y"
-            print("The integer is located at index "+str(middle))
-        else:
-            if targetValue < listOfNumbers[middle]:
-                endingIndex = middle-1
+            if a[y] > a[y+1]:
+                temp = a[y]
+                a[y] = a[y+1]
+                a[y+1] = temp
             else:
-                startingIndex = middle+1
+                pass
+
+    print("The sorted list is", a)
 
 
 main()
@@ -41,17 +35,7 @@ main()
 
 # /* Trivia
 #
-#  * In linear search, the element to be found is searched sequentially in the
-#    given list.
-#  * Binary search works on sorted lists. It begins by comparing an element in
-#    roughly the middle of the given list with the target value. If the target
-#    value matches the element, its position in the list is returned. If the
-#    target value is less than the element, the search continues in the lower
-#    half of the list. If the target value is greater than the element, the
-#    search continues in the upper half of the list. By doing this, the
-#    algorithm eliminates the half in which the target value cannot lie in each
-#    iteration.
-#
-#  * Recursion can also be used to perform binary search.
+#  * After every for x loop, the largest integer in that iteration gets shifted
+#    to the desired place.
 #
 #  */

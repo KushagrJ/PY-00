@@ -1,33 +1,23 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-import speech_recognition as sr
+inputList = [int(x) for x in input().split()]
+totalNumberOfCandies = sum(inputList)
 
-SAMPLE_AUDIO = ("sample.wav")
+if totalNumberOfCandies%len(inputList) != 0:
+    print(-1)
 
-r = sr.Recognizer()
+else:
 
-with sr.AudioFile(SAMPLE_AUDIO) as sourceFile:
-    audio = r.record(sourceFile)
+    finalNumberOfCandiesInEachPacket = int(totalNumberOfCandies/len(inputList))
 
-try:
-    print("The audio file says that", r.recognize_google(audio))
-except sr.UnknownValueError:
-    print("Google's Speech Recognition couldn't understand the audio file")
-except sr.RequestError:
-    print("Couldn't get the results from Google's Speech Recognition")
+    answer = 0
+    for z in inputList:
 
+        if z > finalNumberOfCandiesInEachPacket:
+        # Because the candies to be redistributed will be taken from those
+        # packets which initially had more candies than the final average.
 
+            answer = answer+int((z-finalNumberOfCandiesInEachPacket))
 
-
-
-# /* Trivia
-#
-#  * File formats such as mp3, aac, etc. aren't recognised by Python's
-#    SpeechRecognition.
-#  * An internet connection is required for SpeechRecognition to work.
-#
-#  * The try block lets the user test a block of code for errors.
-#    The except block lets the user handle an error.
-#
-#  */
+    print(int(answer))

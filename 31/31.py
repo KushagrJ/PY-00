@@ -1,51 +1,21 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-import random
+import speech_recognition as sr
 
-numberOfWinsWithSwapping = 0
-numberOfWinsWithoutSwapping = 0
+SAMPLE_AUDIO = ("sample.wav")
 
-for i in range(30):
+r = sr.Recognizer()
 
-    cups = ["Empty"]*3
+with sr.AudioFile(SAMPLE_AUDIO) as sourceFile:
+    audio = r.record(sourceFile)
 
-    chocolateCupNumber = random.randrange(3)
-    cups[chocolateCupNumber] = "Chocolate"
-    cupNumbersOfEmptyCups = [x for x in range(3) if x != chocolateCupNumber]
-
-    originalAnswer = 0
-    while originalAnswer not in ["0","1","2"]:
-        originalAnswer = input("Choose a cup number (0/1/2): ")
-    originalAnswer = int(originalAnswer)
-
-    cupNumberToShow = originalAnswer
-    while cupNumberToShow == originalAnswer:
-        cupNumberToShow = random.choice(cupNumbersOfEmptyCups)
-
-    swap = 0
-    while swap not in ["y", "n"]:
-        print("Cup number", cupNumberToShow, "is empty. Would you like to",
-              "change your answer? (y/n) ", end = "")
-        swap = input()
-
-    if swap == "y":
-        if cups[originalAnswer] == "Chocolate":
-            print("Sorry, better luck next time!")
-        else:
-            print("Congratulations! You won the chocolate!")
-            numberOfWinsWithSwapping = numberOfWinsWithSwapping+1
-    else:
-        if cups[originalAnswer] == "Chocolate":
-            print("Congratulations! You won the chocolate!")
-            numberOfWinsWithoutSwapping = numberOfWinsWithoutSwapping+1
-        else:
-            print("Sorry, better luck next time!")
-
-    print()
-
-print("No. of wins with swapping =", numberOfWinsWithSwapping)
-print("No. of wins without swapping =", numberOfWinsWithoutSwapping)
+try:
+    print("The audio file says that", r.recognize_google(audio))
+except sr.UnknownValueError:
+    print("Google's Speech Recognition couldn't understand the audio file")
+except sr.RequestError:
+    print("Couldn't get the results from Google's Speech Recognition")
 
 
 
@@ -53,6 +23,11 @@ print("No. of wins without swapping =", numberOfWinsWithoutSwapping)
 
 # /* Trivia
 #
-#  * The Monty Hall problem - https://www.youtube.com/watch?v=4Lb-6rxZxx0
+#  * File formats such as mp3, aac, etc. aren't recognised by Python's
+#    SpeechRecognition.
+#  * An internet connection is required for SpeechRecognition to work.
+#
+#  * The try block lets the user test a block of code for errors.
+#    The except block lets the user handle an error.
 #
 #  */

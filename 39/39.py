@@ -1,105 +1,23 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-import numpy
+import string
 
+cipherKey = {}
 
-def main():
+for x in range(len(string.ascii_letters)):
+    cipherKey[string.ascii_letters[x]] = string.ascii_letters[x-5]
 
-    playingBoard = numpy.array([["-", "-", "-"]]*3)
+with open("python.txt") as p:
+    q = p.read(); q = list(q)
+    for y in range(len(q)):
+        if q[y] in cipherKey:
+            q[y] = cipherKey[q[y]]
+        else:
+            pass
+    r = "".join(q)
 
-    a = "y"
-    player = "X"
-    while a == "y":
-        playingBoard, player, a = play(playingBoard, player, a)
-
-
-def play(playingBoard, player, a):
-
-    print(player, ", choose a position :-", sep = "")
-    row = 0; column = 0
-    while (row not in ["1","2","3"]) or (column not in ["1","2","3"]):
-        row = input("Row (1/2/3): "); column = input("Column (1/2/3): ")
-    row = int(row)-1; column = int(column)-1
-
-    while playingBoard[row, column] != "-":
-        print("Position already occupied! Choose another position!\n")
-        row = 0; column = 0
-        while (row not in ["1","2","3"]) or (column not in ["1","2","3"]):
-            row = input("Row (1/2/3): "); column = input("Column (1/2/3): ")
-        row = int(row)-1; column = int(column)-1
-
-    playingBoard[row, column] = player
-    print(); print(playingBoard, "\n")
-
-    if player == "X":
-        player = "O"
-    else:
-        player = "X"
-
-    a = check_whether_the_player_has_won("X", playingBoard, a)
-
-    if a == "y":
-        a = check_whether_the_player_has_won("O", playingBoard, a)
-
-    return playingBoard, player, a
-
-
-def check_whether_the_player_has_won(player, playingBoard, a):
-
-    while True:
-
-        # To check the rows.
-        for r in range(3):
-            count = 0
-            for c in range(3):
-                if playingBoard[r,c] == player:
-                    count = count+1
-            if count == 3:
-                print("Congratulations!", player, "has won the game!"); a = "n"
-        if a == "n":
-            break
-
-        # To check the columns.
-        for c in range(3):
-            count = 0
-            for r in range(3):
-                if playingBoard[r,c] == player:
-                    count = count+1
-            if count == 3:
-                print("Congratulations!", player, "has won the game!"); a = "n"
-        if a == "n":
-            break
-
-        # To check the first diagonal.
-        count = 0
-        for r in range(3):
-            c = r
-            if playingBoard[r,c] == player:
-                count = count+1
-        if count == 3:
-            print("Congratulations!", player, "has won the game!"); a = "n"
-            break
-
-        # To check the second diagonal.
-        count = 0
-        for r in range(2,-1,-1):
-            c = 2-r
-            if playingBoard[r,c] == player:
-                count = count+1
-        if count == 3:
-            print("Congratulations!", player, "has won the game!"); a = "n"
-            break
-
-        if "-" not in playingBoard:
-            print("The game has ended in a draw!"); a = "n"
-
-        break
-
-    return a
-
-
-main()
+print(r)
 
 
 
@@ -107,22 +25,43 @@ main()
 
 # /* Trivia
 #
-#  * Since the ninth turn will always be X's, therefore if X doesn't win in the
-#    ninth (i.e. final) turn, then the game will end in a draw. There is no need
-#    to check for O.
+#  * variableName = {} declares a dictionary. It is used to store data in
+#    'key:value' pairs.
+#  * Dictionaries are insertion ordered, which means that they are ordered
+#    according to the order in which items are added.
+#  * Dictionaries don't resize when items are removed. They re-calculate when
+#    re-insertion is done.
+#  * dictionaryName[key] = value adds an item to the specified dictionary with
+#    the specified key. If an item already exists with the specified key, then
+#    its value gets changed.
+#  * dictionaryName[key] returns the value with the specified key.
+#  * dictionaryName.keys() returns the keys of the specified dictionary
+#    (for eg., dict_keys([key1,key2,...])). list(dictionaryName.keys()) returns
+#    the keys of the specified dictionary as a list (for eg., [key1,key2,...]).
+#  * dictionaryName.values() returns the values of the specified dictionary
+#    (for eg., dict_values([value1,value2,...])). list(dictionaryName.values())
+#    returns the values of the specified dictionary as a list (for eg.,
+#    [value1,value2,...]).
+#  * dictionaryName.items() returns the items of the specified dictionary
+#    (for eg., dict_items([(key1,value1),(key2,value2),...])).
+#    list(dictionaryName.values()) returns the values of the specified
+#    dictionary as a list (for eg., [(key1,value1),(key2,value2),...]).
+#  * for x in dictionaryName: iterates over the keys of the specified
+#    dictionary. To iterate over the specified dictionary's values,
+#    for x in dictionaryName.values(): should be used.
+#  * del dictionaryName[key] / dictionaryName.pop(key) removes the item with the
+#    specified key from the specified dictionary. pop returns the value of the
+#    deleted item, whereas del does not.
+#  * dictionaryName.clear() empties the specified dictionary.
 #
-#  * Lists within a list can also be used instead of numpy arrays.
-#  * Numpy only supports rectangular and homogeneous arrays, as opposed to
-#    lists.
-#  * For numpy arrays, arr[i][j] and arr[i,j] both can be used to access an
-#    element. For lists within a list, arr[i,j] doesn't work.
-#  * print(playingBoard) is the same as print(numpy.matrix(playingBoard)), as
-#    playingBoard is already a numpy array.
+#  * a = "kushagr"; a.replace("k", "K") returns 'Kushagr'
+#  * a = "Kushagr"; a.upper() returns 'KUSHAGR'
+#  * a = "Kushagr"; a.lower() returns 'kushagr'
+#  * a = "Kushagr"; a.swapcase() returns 'kUSHAGR'
 #
-#  * a = [[1,2,3],[4,5,6],[7,8,9]]; 1 in a returns False.
-#  * import numpy; a = numpy.array([[1,2,3],[4,5,6],[7,8,9]]); 1 in a returns
-#    True.
+#  * string.isalpha() returns True if all the characters in the specified
+#    string are alphabetical (i.e. a-z or A-Z).
 #
-#  * while row or column not in ["1","2","3"]: doesn't work.
+#  * 'if x is None' is better than 'if not x'.
 #
 #  */

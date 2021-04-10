@@ -6,7 +6,7 @@ n = int(input())
 for x in range(1, n+1):
 
     multiplier = int(((10**x)-1)/9)
-    print(multiplier**2)
+    print(multiplier*x)
 
 
 
