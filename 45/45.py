@@ -21,10 +21,13 @@ else:
 
 # /* Trivia
 #
-#  * sorted(iterableName, reverse = True/False) returns a new sorted list,
-#    leaving the original list unaffected, whereas listName.sort() sorts the
-#    list in place.
+#  * sorted(iterableName, reverse = True/False, key = functionName) returns a
+#    new sorted list, leaving the original list unaffected, whereas
+#    listName.sort() sorts the list in place.
 #    [The default value of reverse is False]
+#    [key specifies the function according to which the iterable is to be
+#     sorted. For eg., key = len will sort by the length of the elements.
+#     The default value of key is None.]
 #  * sorted() works on any iterable, not just lists, returning a list of
 #    elements, sorted.
 #
