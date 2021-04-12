@@ -17,16 +17,3 @@ if count == m*n:
     print("Yes")
 else:
     print("No")
-
-
-
-
-
-# /* Trivia
-#
-#  * variableName = () declares a tuple.
-#  * Tuples are very similar to lists, except that tuples are immutable.
-#  * Tuples are generally used for heterogeneous data, whereas lists are
-#    generally used for homogeneous data.
-#
-#  */

@@ -54,6 +54,11 @@ print(r)
 #    deleted item, whereas del does not.
 #  * dictionaryName.clear() empties the specified dictionary.
 #
+#  * variableName = () declares a tuple.
+#  * Tuples are very similar to lists, except that tuples are immutable.
+#  * Tuples are generally used for heterogeneous data, whereas lists are
+#    generally used for homogeneous data.
+#
 #  * a = "kushagr"; a.replace("k", "K") returns 'Kushagr'
 #  * a = "Kushagr"; a.upper() returns 'KUSHAGR'
 #  * a = "Kushagr"; a.lower() returns 'kushagr'
