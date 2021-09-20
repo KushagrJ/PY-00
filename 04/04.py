@@ -20,7 +20,7 @@ print("The cost of the product after applying a 10", percentSign, " discount ",
 #  * For numerical data types, it's better to specify int, float, etc. in order
 #    to get the desired results.
 #
-#  * cost = float(input("Enter the cost of the product: ")) is the same as
+#  * cost = float(input("Enter the cost of the product: ")) is similar to
 #    cost = input("Enter the cost of the product: "); cost = float(cost)
 #  * percentSign = "%" is used to print %.
 #
