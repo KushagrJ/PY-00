@@ -2,14 +2,13 @@
 # Python 3.8.6
 
 cost = input("Enter the cost of the product: Rs. ")
-percentSign = "%"
 
 cost = float(cost)
 
 costAfterDiscount = 0.9*cost
 
-print("The cost of the product after applying a 10", percentSign, " discount ",
-      "is Rs. ", costAfterDiscount, sep = "")
+print("The cost of the product after applying a 10% discount is Rs.",
+      costAfterDiscount)
 
 
 
@@ -22,6 +21,5 @@ print("The cost of the product after applying a 10", percentSign, " discount ",
 #
 #  * cost = float(input("Enter the cost of the product: ")) is similar to
 #    cost = input("Enter the cost of the product: "); cost = float(cost)
-#  * percentSign = "%" is used to print %.
 #
 #  */
