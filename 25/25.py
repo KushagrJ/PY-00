@@ -62,7 +62,7 @@ for x in range(len(birthdays)):
 
 
 
-# /* Trivia
+# /* Trivia - 25.py
 #
 #  * The birthday paradox states that in a random group of 23 people, there is
 #    about a 50% chance that two people will have the same birthday. For 70
@@ -97,4 +97,5 @@ for x in range(len(birthdays)):
 #    (for eg., datetime.datetime(2021, 3, 22, 16, 34, 9, 575362)) [Leading
 #    zeroes are not printed]
 #    [Also, d.strftime("specifier") works as well]
-#  */
+#
+#  * End of Trivia */

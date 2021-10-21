@@ -24,11 +24,11 @@ print(numberOfSwaps)
 
 
 
-# /* Trivia
+# /* Trivia - 37.py
 #
 #  * map(function, iterable(s)) executes the specified function for each item in
 #    the given iterable(s). For multiple iterables, the function should have one
 #    parameter for each iterable.
 #    [Used here as an alternative for list comprehension]
 #
-#  */
+#  * End of Trivia */

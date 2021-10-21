@@ -35,10 +35,10 @@ turtle.Screen().exitonclick()
 
 
 
-# /* Trivia
+# /* Trivia - 47.py
 #
 #  * myTurtle.dot(size, color) prints a dot with the specified size and color.
 #    If the size is not specified, then a default value is used. If the color is
 #    not specified, then the pen color is used.
 #
-#  */
+#  * End of Trivia */

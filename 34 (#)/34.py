@@ -33,9 +33,9 @@ main()
 
 
 
-# /* Trivia
+# /* Trivia - 34.py
 #
 #  * After every for x loop, the largest integer in that iteration gets shifted
 #    to the desired place.
 #
-#  */
+#  * End of Trivia */

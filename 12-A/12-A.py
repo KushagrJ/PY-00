@@ -18,7 +18,7 @@ print("That's it for the day!")
 
 
 
-# /* Trivia
+# /* Trivia - 12-A.py
 #
 #  * The for loop assigns a new value to x every time, but nothing of this sort
 #    happens in the while loop.
@@ -50,4 +50,4 @@ print("That's it for the day!")
 #  * The 'in' operator checks whether the specified value is an element of the
 #    specified sequence.
 #
-#  */
+#  * End of Trivia */

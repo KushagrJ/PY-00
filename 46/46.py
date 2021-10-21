@@ -28,7 +28,7 @@ turtle.Screen().exitonclick()
 
 
 
-# /* Trivia
+# /* Trivia - 46.py
 #
 #  * turtle.bgcolor(color) sets the background color of the TurtleScreen.
 #  * myTurtle = turtle.Turtle() creates a variable named myTurtle and assigns it
@@ -53,4 +53,4 @@ turtle.Screen().exitonclick()
 #  * myTurtle.left(angle)/myTurtle.lt(angle) turns the turtle left by the
 #    specified angle.
 #
-#  */
+#  * End of Trivia */

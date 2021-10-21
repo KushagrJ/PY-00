@@ -1,34 +1,20 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.6
 
-def main():
+numberOfStudents = int(input("Enter the number of students enrolled in "
+                             "this course: "))
 
-    numberOfStudents = get_the_number_of_students_from_user()
-
-    if numberOfStudents > 0:
-        listOfNames = get_the_list_of_names_from_user(numberOfStudents)
-        marksObtained = get_the_list_of_marks_obtained_from_user(listOfNames)
-        print_the_names_after_sorting(numberOfStudents, listOfNames)
-        print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained)
-    else:
-        print("The number of students should be greater than 0!")
+print()
 
 
 
-def get_the_number_of_students_from_user():
 
-    numberOfStudents = int(input("Enter the number of students enrolled in "
-                                 "this course: "))
-
-    print()
-
-    return numberOfStudents
+if numberOfStudents > 0:
 
 
-
-def get_the_list_of_names_from_user(numberOfStudents):
 
     listOfNames = []
+    marksObtained = []
 
     for x in range(numberOfStudents):
         print("Enter the name of student no. ", x+1, ": ", sep = "", end = "")
@@ -37,14 +23,6 @@ def get_the_list_of_names_from_user(numberOfStudents):
 
     print()
 
-    return listOfNames
-
-
-
-def get_the_list_of_marks_obtained_from_user(listOfNames):
-
-    marksObtained = []
-
     for y in listOfNames:
         print("Enter the marks obtained by ", y, ": ", sep = "", end = "")
         dummyVariable2 = int(input())
@@ -52,11 +30,6 @@ def get_the_list_of_marks_obtained_from_user(listOfNames):
 
     print()
 
-    return marksObtained
-
-
-
-def print_the_names_after_sorting(numberOfStudents, listOfNames):
 
 
     print("The name(s) of the student(s) enrolled in this course is(are) :-")
@@ -89,9 +62,6 @@ def print_the_names_after_sorting(numberOfStudents, listOfNames):
 
     print("(in descending alphabetical order).\n")
 
-
-
-def print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained):
 
 
     print("The marks obtained by the student(s) enrolled in this course",
@@ -127,25 +97,42 @@ def print_the_marks_obtained_after_sorting(numberOfStudents, marksObtained):
 
 
 
-main()
+
+else:
+    print("The number of students should be greater than 0!")
 
 
 
 
 
-# /* Trivia
+# /* Trivia - 15-A.py
 #
-#  * numberOfStudents = get_the_number_of_students_from_user() creates a local
-#    variable called numberOfStudents inside the main() function, 'runs' the
-#    function called get_the_number_of_students_from_user() and assign's
-#    get_the_number_of_students_from_user()'s return value to the local variable
-#    numberOfStudents.
-#    [Similarly for others]
-#  * numberOfStudents in
-#    'listOfNames = get_the_list_of_names_from_user(numberOfStudents)' and
-#    numberOfStudents in
-#    'def get_the_list_of_names_from_user(numberOfStudents):' are different from
-#    each other. They are just named the same to avoid confusion.
-#    [Similarly for others]
+#  * listName.sort() sorts the specified list in ascending order.
+#    [This doesn't work for lists containing numerical and string elements both]
+#  * listName.reverse() reverses the order of the specified list.
 #
-#  */
+#  * listName[unsignedInt1 : unsignedInt2+1 : positiveInt] returns a subset of
+#    the specified list containing those items whose indices are in the range
+#    unsignedInt1 to unsignedInt2, including them both. This is known as
+#    slicing. positiveInt sets the incrementation. The default values of
+#    unsignedInt1, unsignedInt2+1 and positiveInt are 0, len(listName) and 1,
+#    respectively.
+#    [Similarly for other sequences]
+#
+#    For negative incrementations,
+#    a[::-1] returns all items (reversed),
+#    a[1::-1] returns the first two items (reversed),
+#    a[:-3:-1] returns the last two (not four) items (reversed),
+#    a[-3::-1] returns all items except the last two (reversed), and so on.
+#    [For s[i:j], (i) if i is omitted/'None', then it is treated like 0.
+#                 (ii) if j is omitted/'None', then it is treated like len(s).
+#     For s[i:j:k], (i) if i or j are omitted/'None', then they become the 'end'
+#                       values (which end (i.e. left end / right end) depends on
+#                       the sign of k).
+#                       i and j will always represent the start and stop values,
+#                       respectively. Only their ends will change depending on
+#                       the sign of k.
+#                   (ii) if k is omitted/'None', then it is treated as 1.]
+#    [Slices like s[2:5:-1] don't work. They return an empty sequence.]
+#
+#  * End of Trivia */

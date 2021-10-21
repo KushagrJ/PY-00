@@ -105,7 +105,7 @@ main()
 
 
 
-# /* Trivia
+# /* Trivia - 40.py
 #
 #  * Since the ninth turn will always be X's, therefore if X doesn't win in the
 #    ninth (i.e. final) turn, then the game will end in a draw. There is no need
@@ -125,4 +125,4 @@ main()
 #
 #  * while row or column not in ["1","2","3"]: doesn't work.
 #
-#  */
+#  * End of Trivia */

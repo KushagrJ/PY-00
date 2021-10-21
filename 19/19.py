@@ -30,7 +30,7 @@ print("Converting", a, "into", c, "took", numberOfIterations, "iterations")
 
 
 
-# /* Trivia
+# /* Trivia - 19.py
 #
 #  * open("fileName", "mode") returns the file object (such as a text file)
 #    specified by fileName in the specified mode. The mode can be r (read only),
@@ -59,4 +59,4 @@ print("Converting", a, "into", c, "took", numberOfIterations, "iterations")
 #  * random.random() returns a randomly selected floating-point value belonging
 #    to [0, 1).
 #
-#  */
+#  * End of Trivia */

@@ -141,7 +141,7 @@ main()
 
 
 
-# /* Trivia
+# /* Trivia - 15-B.py
 #
 #  * Unlike in C where functions can be declared at the beginning and defined
 #    after their first use, functions in Python need to be defined before their
@@ -157,4 +157,4 @@ main()
 #    another function of the same class, but that is very similar to using
 #    global variables.
 #
-#  */
+#  * End of Trivia */

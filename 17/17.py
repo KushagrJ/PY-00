@@ -17,7 +17,7 @@ plt.show()
 
 
 
-# /* Trivia
+# /* Trivia - 17.py
 #
 #  * The matplotlib.pyplot module's official documentation calls for the use of
 #    plt as an alias.
@@ -34,4 +34,4 @@ plt.show()
 #    red stars, among others. The default option is continuous blue lines. The
 #    'r' can be replaced with 'b' for blue, 'g' for green, etc.
 #
-#  */
+#  * End of Trivia */

@@ -24,7 +24,7 @@ print("Out of the", numberOfStudents, "students,",
 
 
 
-# /* Trivia
+# /* Trivia - 14.py
 #
 #  * len(listName) returns the number of items in the specified list.
 #    [Similarly for other sequences]
@@ -35,4 +35,4 @@ print("Out of the", numberOfStudents, "students,",
 #    specified item.
 #    [Similarly for other sequences]
 #
-#  */
+#  * End of Trivia */

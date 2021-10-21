@@ -19,7 +19,7 @@ print(*outputList)
 
 
 
-# /* Trivia
+# /* Trivia - 20.py
 #
 #  * print(*sequenceName) prints the elements of the specified sequence with a
 #    space between them.
@@ -29,4 +29,4 @@ print(*outputList)
 #    For eg., fruitsStartingWithA = [x for x in fruits if x[0] == "A"]
 #  * abs(number) returns the absolute value of the specified number.
 #
-#  */
+#  * End of Trivia */

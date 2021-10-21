@@ -7,7 +7,7 @@ print("Hello, World!")
 
 
 
-# /* Trivia
+# /* Trivia - 00.py
 #
 #  * \n represents the newline character.
 #  * The print function in Python automatically prints spaces between its
@@ -15,4 +15,4 @@ print("Hello, World!")
 #    Similarly, print also automatically prints newline characters after each
 #    print function. To avoid this, end = "" is used.
 #
-#  */
+#  * End of Trivia */

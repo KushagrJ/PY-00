@@ -51,8 +51,8 @@ print("No. of wins without swapping =", numberOfWinsWithoutSwapping)
 
 
 
-# /* Trivia
+# /* Trivia - 32.py
 #
 #  * The Monty Hall problem - https://www.youtube.com/watch?v=4Lb-6rxZxx0
 #
-#  */
+#  * End of Trivia */

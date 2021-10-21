@@ -14,7 +14,7 @@ else:
 
 
 
-# /* Trivia
+# /* Trivia - 48.py
 #
 #  * string1.find(string2) returns the starting index of the first occurrence
 #    of string2 in string1. If string2 is not found in string1, then it
@@ -22,4 +22,4 @@ else:
 #  * find() is similar to index(), but index() raises ValueError when the string
 #    is not found, instead of returning -1.
 #
-#  */
+#  * End of Trivia */

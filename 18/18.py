@@ -97,7 +97,7 @@ main()
 
 
 
-# /* Trivia
+# /* Trivia - 18.py
 #
 #  * random.choice(sequenceName) returns a randomly selected element from the
 #    specified sequence.
@@ -108,4 +108,4 @@ main()
 #    elements in the specified iterable and joining them into a single string,
 #    with the specified separator separating the elements.
 #
-#  */
+#  * End of Trivia */

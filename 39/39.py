@@ -23,7 +23,7 @@ print(r)
 
 
 
-# /* Trivia
+# /* Trivia - 39py
 #
 #  * variableName = {} declares a dictionary. It is used to store data in
 #    'key:value' pairs.
@@ -69,4 +69,4 @@ print(r)
 #
 #  * 'if x is None' is better than 'if not x'.
 #
-#  */
+#  * End of Trivia */

@@ -21,7 +21,7 @@ print(numberOfSnakes, numberOfLadders)
 
 
 
-# /* Trivia
+# /* Trivia - 49.py
 #
 #  * string.strip(characters) removes the specified leading and trailing
 #    characters from the specified string, and returns the trimmed string. If no
@@ -31,4 +31,4 @@ print(numberOfSnakes, numberOfLadders)
 #  * int(), float(), etc. also trim the leading and trailing whitespaces,
 #    without the use of strip().
 #
-#  */
+#  * End of Trivia */

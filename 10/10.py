@@ -14,7 +14,7 @@ print(c)
 
 
 
-# /* Trivia
+# /* Trivia - 10.py
 #
 #  * input().split("separator", unsignedInt-1) takes multiple inputs as strings.
 #    The default separator is any whitespace. The number of inputs is equal to
@@ -25,4 +25,4 @@ print(c)
 #    a = input().split() will take any number of inputs and assign a list of the
 #    inputs to a.
 #
-#  */
+#  * End of Trivia */

@@ -17,8 +17,8 @@ sum = b[-k]+b[k-1]; print(sum)
 
 
 
-# /* Trivia
+# /* Trivia - 38.py
 #
 #  * Given that the inputs are logically valid.
 #
-#  */
+#  * End of Trivia */

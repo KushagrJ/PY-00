@@ -22,7 +22,7 @@ else:
 
 
 
-# /* Trivia
+# /* Trivia - 33.py
 #
 #  * For two users to play this game, a few modifications will be required to
 #    ensure no cheating, such as making different assignments for each player,
@@ -36,4 +36,4 @@ else:
 #             For Player 2, 0/3/6/9 will correspond to Paper, 1/4/7 will
 #             correspond to Rock and 2/5/8 will correspond to Scissors.
 #
-#  */
+#  * End of Trivia */

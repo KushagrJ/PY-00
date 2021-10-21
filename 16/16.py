@@ -71,11 +71,11 @@ main()
 
 
 
-# /* Trivia
+# /* Trivia - 16.py
 #
 #  * The number of items to reject from either side to calculate the 10% trimmed
 #    mean is given by max{n | n <= x, integer n}, where x is equal to
 #    0.1*numberOfItems. This is also known as the floor function or the greatest
 #    integer function.
 #
-#  */
+#  * End of Trivia */

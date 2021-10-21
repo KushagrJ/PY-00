@@ -12,8 +12,8 @@ for x in range(1, n+1):
 
 
 
-# /* Trivia
+# /* Trivia - 42.py
 #
 #  * For x = 1,2,3,..., multiplier = 1,11,111,...
 #
-#  */
+#  * End of Trivia */

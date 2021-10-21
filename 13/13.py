@@ -30,7 +30,7 @@ for x in shoppingList:
 
 
 
-# /* Trivia
+# /* Trivia - 13.py
 #
 #  * variableName = [] declares a list.
 #  * shoppingList.append(item) adds the specified item at the end of
@@ -55,4 +55,4 @@ for x in shoppingList:
 #    to the last element of a sequence, [-2] corresponds to the second last
 #    element of a sequence, and so on.
 #
-#  */
+#  * End of Trivia */

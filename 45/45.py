@@ -19,7 +19,7 @@ else:
 
 
 
-# /* Trivia
+# /* Trivia - 45.py
 #
 #  * sorted(iterableName, reverse = True/False, key = functionName) returns a
 #    new sorted list, leaving the original list unaffected, whereas
@@ -31,4 +31,4 @@ else:
 #  * sorted() works on any iterable, not just lists, returning a list of
 #    elements, sorted.
 #
-#  */
+#  * End of Trivia */

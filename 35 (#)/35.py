@@ -39,7 +39,7 @@ main()
 
 
 
-# /* Trivia
+# /* Trivia - 35.py
 #
 #  * In linear search, the element to be found is searched sequentially in the
 #    given list.
@@ -54,4 +54,4 @@ main()
 #
 #  * Recursion can also be used to perform binary search.
 #
-#  */
+#  * End of Trivia */

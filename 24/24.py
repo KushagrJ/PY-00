@@ -41,7 +41,7 @@ else:
 
 
 
-# /* Trivia
+# /* Trivia - 24.py
 #
 #  * import string; string.ascii_letters returns
 #    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -58,4 +58,4 @@ else:
 #  * chr(integer) returns the character whose Unicode code is represented by the
 #    specified integer.
 #
-#  */
+#  * End of Trivia */

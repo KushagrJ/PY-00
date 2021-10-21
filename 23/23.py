@@ -57,7 +57,7 @@ for i in magicSquare:
 
 
 
-# /* Trivia
+# /* Trivia - 23.py
 #
 #  * A square array of numbers, usually distinct positive integers, is called a
 #    magic square if the sums of the numbers in each row, each column and both
@@ -85,4 +85,4 @@ for i in magicSquare:
 #    elements' indices representing the column numbers.
 #    For eg., list = [[1,2,3],[4,5,6],[7,8,9]]; list[1][2] returns 6.
 #
-#  */
+#  * End of Trivia */

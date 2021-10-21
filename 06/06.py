@@ -24,8 +24,8 @@ else:
 
 
 
-# /* Trivia
+# /* Trivia - 06.py
 #
 #  * elif stands for else if.
 #
-#  */
+#  * End of Trivia */
